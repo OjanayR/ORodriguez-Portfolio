@@ -144,7 +144,7 @@ img{
   .nav_menu{
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
@@ -177,10 +177,21 @@ img{
   cursor: pointer;
 }
 
-
 /*==== SHOW MENU ====*/
+.show{
+  right: 0;
+}
 
 /*==== ACTIVE MENU ====*/
+.active::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: .18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
 
 /*==== HOME ====*/
 
