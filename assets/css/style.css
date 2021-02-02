@@ -10,7 +10,7 @@
 /*==== COLORES ====*/
 :root{
   --first-color: rgb(195, 142, 112);
-  --white-color: rgb(176, 125, 98);
+  --white-color: rgb(70, 63, 58);
   --dark-color: rgb(157, 107, 83);
   --text-color: rgb(70, 63, 58);
 
@@ -133,6 +133,50 @@ img{
   background-color: var(--first-color);
 }
 /*==== NAV ====*/
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  .nav_menu{
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgb (0, 0, 0);
+    transition: .5s;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.nav_item{
+  margin-bottom: var(--mb-4);
+}
+
+.nav_link{
+  position: relative;
+  color: var(--dark-color);
+}
+
+.nav_link:hover{
+  color: var(--first-color);
+}
+
+.nav_logo{
+  color: var(--white-color);
+}
+
+.nav_toggle{
+  color: var(--white-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 /*==== SHOW MENU ====*/
 
