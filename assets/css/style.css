@@ -40,7 +40,6 @@
   --mb-2: 1rem;
   --mb-3: 1.5rem;
   --mb-4: 2rem;
-
 }
 
 /*==== Z INDEX ====*/
@@ -194,5 +193,30 @@ img{
 }
 
 /*==== HOME ====*/
+.home{
+  position: relative;
+  background-color: var(--first-color);
+  overflow: hidden;
+}
 
+.home_container{
+  height: calc(100vh -var(--header-height));
+  row-gap: 5rem;
+}
+
+.home_title{
+  align-self: flex-end;
+  font-size: var(--big-font-size);
+  color: var(--white-color);
+  line-height: .8
+}
 /*==== ABOUT ====*/
+
+/*==== SKILLS ====*/
+
+/*==== PORTFOLIO ====*/
+
+/*==== CONTACT ====*/
+
+/*==== FOOTER ====*/
+
