@@ -13,7 +13,6 @@
   --white-color: rgb(70, 63, 58);
   --dark-color: rgb(157, 107, 83);
   --text-color: rgb(70, 63, 58);
-
 }
 
 /*==== FONTS AND TYPOGRAPHY ====*/
@@ -94,7 +93,7 @@ img{
 .section-title{
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--dark-color);
+  color: var(--white-color);
   margin: var(--mb-4) 0;
   text-align: center;
 }
@@ -159,7 +158,7 @@ img{
 
 .nav_link{
   position: relative;
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 .nav_link:hover{
@@ -167,7 +166,7 @@ img{
 }
 
 .nav_logo{
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 .nav_toggle{
@@ -226,16 +225,60 @@ img{
  color: var(--white-color);
 }
 
+/*
 .home_img{
   position: static;
   right: 0;
   bottom: 0;
   max-width: 270px;
 }
+*/
 
 /*==== ABOUT ====*/
+.about{
+  background-color:  rgb(157, 107, 83);
+}
 
+.about_container{
+  justify-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.about_img{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  width: 320px;
+  height: 320px;
+  border-radius: 25%;
+  overflow: hidden;
+}
+
+.about_subtitle{
+  font-size: var(--h2-font-size);
+  color: var(--white-color);
+  margin-bottom: var(--mb-1);
+}
+
+.about_text{
+  margin-bottom: var(--mb-4);
+}
+
+.about_profession{
+  display: block;
+  margin-bottom: var(--mb-4); 
+}
+
+.about_social-icon:hover{
+  color: var(--white-color);
+}
 /*==== SKILLS ====*/
+.skills{
+  background-color: rgb(138, 90, 68);
+}
+
+
 
 /*==== PORTFOLIO ====*/
 
